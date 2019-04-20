@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/hope">
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:padding="25dp"
+        android:background="@drawable/round_trans_white_25"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/content_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="许个愿吧, 万一实现了呢"
+            android:lines="10"
+            android:textColor="@color/fore"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/photo_grid_container"
+            android:layout_width="243dp"
+            android:layout_height="243dp"
+            android:layout_margin="16dp"
+            app:columnCount="3">
+
+            <ImageView
+                android:id="@+id/add_photo_btn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/round_forlight_10"
+                android:padding="30dp"
+                android:src="@drawable/ic_add"
+                android:tint="@color/foreLight" />
+
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+
+</RelativeLayout>

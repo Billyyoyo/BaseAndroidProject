@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppParentTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppParentTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="android:actionBarSize">40dp</item>
+        <item name="actionBarSize">40dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:actionMenuTextColor">@color/barFore</item>
+        <item name="android:actionBarStyle">@style/app_actionbar_style</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@mipmap/startup</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="AppDialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/barTint</item>
+        <item name="colorPrimary">@color/barTint</item>
+    </style>
+
+    <style name="app_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/app_actionbar_titleStyle</item>
+    </style>
+
+    <style name="app_actionbar_titleStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

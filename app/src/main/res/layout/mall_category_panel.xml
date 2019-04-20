@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fun.flyee.sunshine4u.android.modules.mall.MallCategoryView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="0.5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left_category_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="个人护理"
+            android:textColor="@color/fore"
+            android:textSize="13sp" />
+        <ImageView
+            android:id="@+id/left_category_image"
+            android:src="@mipmap/download"
+            android:scaleType="centerCrop"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="0.5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/right_category_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:text="游戏神器"
+            android:textColor="@color/fore"
+            android:textSize="13sp" />
+        <ImageView
+            android:id="@+id/right_category_image"
+            android:src="@mipmap/download"
+            android:scaleType="centerCrop"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+</fun.flyee.sunshine4u.android.modules.mall.MallCategoryView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.ChangePasswordActivity">
+
+    <EditText
+        android:id="@+id/content_box"
+        style="@style/login_edit_style_name"
+        android:layout_height="200dp"
+        android:background="@drawable/round_main_4"
+        android:hint="您有好的建议请告诉我们吧"
+        android:gravity="left|top"
+        android:maxLength="500"
+        android:lines="10"
+        android:paddingLeft="5dp" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/login_theme_round_button"
+        android:layout_marginTop="30dp"
+        android:text="提交" />
+</LinearLayout>

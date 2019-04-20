@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sheet"
+    android:orientation="vertical">
+
+    <View style="@style/sheet_seperator"
+        android:layout_margin="0dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="写点啥"
+        android:textColor="@color/foreLight"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/add_note_btn"
+        style="@style/sheet_item">
+
+        <ImageView
+            style="@style/sheet_item_icon"
+            android:src="@drawable/ic_note"
+            android:tint="@color/blue" />
+
+        <TextView
+            style="@style/sheet_item_text"
+            android:text="笔记" />
+    </LinearLayout>
+
+    <View style="@style/sheet_seperator" />
+
+    <LinearLayout
+        android:id="@+id/add_hope_btn"
+        style="@style/sheet_item">
+
+        <ImageView
+            style="@style/sheet_item_icon"
+            android:src="@drawable/ic_hope"
+            android:tint="@color/orange" />
+
+        <TextView
+            style="@style/sheet_item_text"
+            android:text="心愿" />
+    </LinearLayout>
+
+    <View style="@style/sheet_seperator" />
+
+    <LinearLayout
+        android:id="@+id/add_plan_btn"
+        style="@style/sheet_item">
+
+        <ImageView
+            style="@style/sheet_item_icon"
+            android:src="@drawable/ic_plan"
+            android:tint="@color/green" />
+
+        <TextView
+            style="@style/sheet_item_text"
+            android:text="计划" />
+    </LinearLayout>
+
+</LinearLayout>

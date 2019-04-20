@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp">
+
+    <View
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="3dp"
+        android:background="@drawable/oval_white_back" />
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/fore"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/fore"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/photo_grid_container"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            app:columnCount="3"></android.support.v7.widget.GridLayout>
+
+        <TextView
+            android:id="@+id/time_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/foreLight"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/main_container"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/foreLight" />
+</RelativeLayout>

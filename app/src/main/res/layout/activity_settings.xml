@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/change_userinfo_btn"
+        style="@style/action_menu_item"
+        android:layout_marginTop="0dp">
+        <ImageView
+            style="@style/action_menu_item_icon"
+            android:src="@drawable/ic_checkin" />
+        <TextView
+            style="@style/action_menu_item_text"
+            android:text="编辑个人信息" />
+        <ImageView
+            style="@style/action_menu_item_action" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/change_password_btn"
+        style="@style/action_menu_item"
+        android:layout_marginTop="0.5dp">
+        <ImageView
+            style="@style/action_menu_item_icon"
+            android:src="@drawable/ic_lock" />
+        <TextView
+            style="@style/action_menu_item_text"
+            android:text="修改密码" />
+        <ImageView
+            style="@style/action_menu_item_action" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/suggestion_btn"
+        style="@style/action_menu_item"
+        android:layout_marginTop="0.5dp">
+        <ImageView
+            style="@style/action_menu_item_icon"
+            android:src="@drawable/ic_mail" />
+        <TextView
+            style="@style/action_menu_item_text"
+            android:text="意见反馈" />
+        <ImageView
+            style="@style/action_menu_item_action" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/clear_memory_btn"
+        style="@style/action_menu_item"
+        android:layout_marginTop="0.5dp">
+        <ImageView
+            style="@style/action_menu_item_icon"
+            android:src="@drawable/ic_folder" />
+        <TextView
+            style="@style/action_menu_item_text"
+            android:text="清除缓存" />
+        <ImageView
+            style="@style/action_menu_item_action" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/logout_btn"
+        style="@style/action_menu_item"
+        android:background="@color/red"
+        android:layout_marginTop="16dp">
+        <TextView
+            style="@style/action_menu_item_text"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="退出登录" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fun.flyee.sunshine4u.android.modules.note.HopeHeaderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/top_hop" />
+
+    <LinearLayout
+        android:id="@+id/hope_container"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="170dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</fun.flyee.sunshine4u.android.modules.note.HopeHeaderView>

@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/avatar_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <EditText
+        android:id="@+id/nickname_box"
+        style="@style/login_edit_style"
+        android:layout_marginTop="30dp"
+        android:hint="昵称"
+        android:lines="1"
+        android:maxLength="20" />
+
+    <View
+        style="@style/primary_separetor_line_style"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioGroup
+            android:id="@+id/gender_box"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_marginRight="36dp"
+                android:id="@+id/male_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@drawable/selector_radio_img"
+                android:checked="true"
+                android:text="男   "
+                android:textColor="@color/selector_color_radio_button"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/female_radio"
+                android:button="@null"
+                android:drawableRight="@drawable/selector_radio_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/selector_color_radio_button"
+                android:text="女   " />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View
+        style="@style/primary_separetor_line_style"/>
+
+    <EditText
+        android:id="@+id/desc_box"
+        style="@style/login_edit_style"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:hint="个性签名"
+        android:maxLength="100" />
+
+    <View
+        style="@style/primary_separetor_line_style"/>
+
+
+    <Button
+        android:id="@+id/next_btn"
+        android:text="下一步"
+        android:layout_marginTop="30dp"
+        style="@style/login_theme_round_button" />
+</LinearLayout>

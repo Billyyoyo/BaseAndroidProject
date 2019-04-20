@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="公益彩票"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#D3D3D3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/rbMenue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/mRb1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/ic_home"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@color/foreLight"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+            <RadioButton
+                android:id="@+id/mRb2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/undo"
+                android:gravity="center"
+                android:text="后退"
+                android:textColor="@color/foreLight"
+                android:textSize="13sp"
+                android:textStyle="bold"
+
+                />
+
+            <RadioButton
+                android:id="@+id/mRb3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/redo"
+                android:gravity="center"
+                android:text="前进"
+                android:textColor="@color/foreLight"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/mRb4"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="3dp"
+
+                android:drawableTop="@drawable/ic_perm_phone_msg"
+                android:gravity="center"
+                android:text="客服"
+                android:textColor="@color/foreLight"
+                android:textSize="13sp"
+
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/mRb5"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+
+                android:button="@null"
+                android:drawablePadding="3dp"
+
+
+                android:drawableTop="@drawable/ic_delete_forever"
+                android:gravity="center"
+                android:text="清除缓存"
+                android:textColor="@color/foreLight"
+                android:textSize="13sp"
+                android:textStyle="bold"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

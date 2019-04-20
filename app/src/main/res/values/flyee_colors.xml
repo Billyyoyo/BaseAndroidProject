@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#2BD5B7</color>
+    <color name="colorPrimaryDark">#2BD5B7</color>
+    <color name="colorAccent">#2BD5B7</color>
+    <color name="colorControlNormal">#efefed</color>
+
+    <color name="back">#F5F5F5</color>
+    <color name="backLight">#FFFFFF</color>
+    <color name="fore">#454F5E</color>
+    <color name="foreLight">#B3C1C6</color>
+    <color name="barTint">#2BD5B7</color>
+    <color name="barFore">#FFFFFF</color>
+    <color name="barForeLight">#1E947F</color>
+    <color name="tabBack">#FFFFFF</color>
+    <color name="tabFore">#2BD5B7</color>
+    <color name="tabForeLight">#77ffffff</color>
+    <color name="tabColor">#FFF9F9</color>
+</resources>

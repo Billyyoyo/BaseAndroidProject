@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar_view"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:riv_oval="true"
+            app:riv_border_width="2dp"
+            app:riv_border_color="@android:color/white"/>
+        <TextView
+            android:id="@+id/nickname_view"
+            android:text="adsf"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_below="@+id/avatar_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="30dp" />
+        <ImageView
+            android:id="@+id/gender_view"
+            android:src="@drawable/male"
+            android:padding="9dp"
+            android:layout_alignTop="@+id/nickname_view"
+            android:layout_toRightOf="@+id/nickname_view"
+            android:layout_marginLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:id="@+id/setting_btn"
+            android:src="@drawable/ic_settings_white_48dp"
+            android:padding="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/checkin_btn"
+        style="@style/action_menu_item"
+        android:layout_marginTop="16dp">
+        <ImageView
+            style="@style/action_menu_item_icon"
+            android:tint="@color/green"
+            android:src="@drawable/ic_checkin" />
+        <TextView
+            style="@style/action_menu_item_text"
+            android:text="签到" />
+        <ImageView
+            style="@style/action_menu_item_action" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/point_btn"
+        style="@style/action_menu_item"
+        android:layout_marginTop="16dp">
+        <ImageView
+            style="@style/action_menu_item_icon"
+            android:tint="@color/gold"
+            android:src="@drawable/ic_point" />
+        <TextView
+            style="@style/action_menu_item_text"
+            android:text="我的积分" />
+        <TextView
+            android:id="@+id/point_view"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/foreLight"
+            android:textSize="12sp"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recent_btn"
+        style="@style/action_menu_item">
+        <ImageView
+            style="@style/action_menu_item_icon"
+            android:tint="@color/blue"
+            android:src="@drawable/ic_recent" />
+        <TextView
+            style="@style/action_menu_item_text"
+            android:text="最近浏览" />
+        <ImageView
+            style="@style/action_menu_item_action" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/favorite_btn"
+        style="@style/action_menu_item">
+        <ImageView
+            style="@style/action_menu_item_icon"
+            android:tint="@color/red"
+            android:src="@drawable/ic_bookmark" />
+        <TextView
+            style="@style/action_menu_item_text"
+            android:text="收藏" />
+        <ImageView
+            style="@style/action_menu_item_action" />
+    </LinearLayout>
+
+</LinearLayout>

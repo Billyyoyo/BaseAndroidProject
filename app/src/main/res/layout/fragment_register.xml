@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:text="立即注册"
+        android:textColor="@color/fore"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/for_account_pwd_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar">
+
+        <EditText
+            android:id="@+id/user_name_box"
+            style="@style/login_edit_style_name"
+            android:hint="请输入用户名/手机号"
+            android:maxLength="20"
+            android:paddingLeft="5dp" />
+
+        <View
+            style="@style/primary_separetor_line_style"
+            android:layout_below="@+id/user_name_box" />
+
+        <EditText
+            android:id="@+id/password_box"
+            style="@style/login_edit_style_pwd"
+            android:layout_below="@+id/user_name_box"
+            android:hint="请输入密码(6-16位)"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="5dp" />
+
+        <View
+            style="@style/primary_separetor_line_style"
+            android:layout_below="@+id/password_box" />
+
+        <EditText
+            android:id="@+id/confirm_box"
+            style="@style/login_edit_style_pwd"
+            android:layout_below="@+id/password_box"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="5dp" />
+
+        <View
+            style="@style/primary_separetor_line_style"
+            android:layout_below="@+id/confirm_box" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        style="@style/login_theme_round_button"
+        android:layout_below="@+id/for_account_pwd_container"
+        android:layout_marginTop="20dp"
+        android:text="注册" />
+
+</RelativeLayout>
