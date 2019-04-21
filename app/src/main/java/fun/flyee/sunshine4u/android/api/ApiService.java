@@ -1,6 +1,6 @@
 package fun.flyee.sunshine4u.android.api;
 
-import fun.flyee.sunshine4u.android.models.NewsResponse;
+import fun.flyee.sunshine4u.android.models.JisuResponse;
 import io.reactivex.Observable;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
@@ -9,28 +9,32 @@ public interface ApiService {
 
     //jisu
     @GET("/news/search")
-    Observable<NewsResponse> newsSearch(@Query("appkey") String appkey, @Query("keyword") String keyword);
+    Observable<JisuResponse> newsSearch(@Query("appkey") String appkey, @Query("keyword") String keyword);
 
     //jisu
     @GET("/news/channel")
-    Observable<NewsResponse> newsChannels(@Query("appkey") String appkey);
+    Observable<JisuResponse> newsChannels(@Query("appkey") String appkey);
 
     //jisu
     @GET("/news/get")
-    Observable<NewsResponse> newsList(@Query("appkey") String appkey
+    Observable<JisuResponse> newsList(@Query("appkey") String appkey
             , @Query("channel") String channel
             , @Query("start") Integer start
             , @Query("num") Integer num);
 
     //jisu
+    @GET("/astro/all")
+    Observable<JisuResponse> zodiacAll(@Query("appkey") String appkey);
+
+    //jisu
     @GET("/astro/fortune")
-    Observable<NewsResponse> zodiacDetail(@Query("appkey") String appkey
+    Observable<JisuResponse> zodiacDetail(@Query("appkey") String appkey
             , @Query("astroid") String astroid
             , @Query("date") String date);
 
     //tianxing
     @GET("/star")
-    Observable<NewsResponse> zodiacStatus(@Query("key") String appkey
+    Observable<JisuResponse> zodiacStatus(@Query("key") String appkey
             , @Query("astro") String astro
             , @Query("y") String year
             , @Query("m") String month
@@ -38,7 +42,7 @@ public interface ApiService {
 
     //tianxing
     @GET("/xingzuo")
-    Observable<NewsResponse> zodiacMatch(@Query("key") String appkey
+    Observable<JisuResponse> zodiacMatch(@Query("key") String appkey
             , @Query("me") String me
             , @Query("he") String he);
 

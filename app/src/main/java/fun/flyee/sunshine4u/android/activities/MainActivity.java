@@ -26,6 +26,7 @@ import fun.flyee.sunshine4u.android.modules.news.NewsTabFragment;
 import fun.flyee.sunshine4u.android.modules.note.NoteFragment;
 import fun.flyee.sunshine4u.android.fragments.UserInfoFragment;
 import fun.flyee.sunshine4u.android.models.MainTabItem;
+import fun.flyee.sunshine4u.android.modules.zodiac.ZodiacHomeFragment;
 import fun.flyee.sunshine4u.android.widgets.Toaster;
 
 public class MainActivity extends BaseActivity {
@@ -50,7 +51,7 @@ public class MainActivity extends BaseActivity {
 
     private void configFragments(Bundle savedInstanceState) {
         if (savedInstanceState == null) {
-            Fragment fragment0 = NewsTabFragment.newInstance();
+            Fragment fragment0 = ZodiacHomeFragment.newInstance();
             Fragment fragment1 = NoteFragment.newInstance();
             Fragment fragment2 = MallFragment.newInstance();
             Fragment fragment3 = UserInfoFragment.newInstance();

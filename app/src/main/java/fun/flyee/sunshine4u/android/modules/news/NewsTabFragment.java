@@ -8,7 +8,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
-import com.alibaba.fastjson.JSONArray;
 import com.flyco.tablayout.SlidingTabLayout;
 import com.flyco.tablayout.listener.OnTabSelectListener;
 
@@ -18,15 +17,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import fun.flyee.sunshine4u.android.R;
-import fun.flyee.sunshine4u.android.api.ApiClient;
 import fun.flyee.sunshine4u.android.fragments.BaseFragment;
-import fun.flyee.sunshine4u.android.models.NewsResponse;
-import fun.flyee.sunshine4u.android.utils.Constant;
-import fun.flyee.sunshine4u.android.widgets.Toaster;
-import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -79,14 +70,14 @@ public class NewsTabFragment extends BaseFragment {
 //        ApiClient.jsApi().newsChannels(Constant.JISU_API_KEY)
 //                .subscribeOn(Schedulers.io())
 //                .observeOn(AndroidSchedulers.mainThread())
-//                .subscribe(new Observer<NewsResponse>() {
+//                .subscribe(new Observer<JisuResponse>() {
 //                    @Override
 //                    public void onSubscribe(Disposable d) {
 //
 //                    }
 //
 //                    @Override
-//                    public void onNext(NewsResponse resp) {
+//                    public void onNext(JisuResponse resp) {
 //                        if ("0".equals(resp.getStatus())) {
 //                            JSONArray array = JSONArray.parseArray(resp.getResult());
 //                            channels = array.toJavaList(String.class);

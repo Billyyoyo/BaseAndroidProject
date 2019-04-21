@@ -13,7 +13,7 @@ import java.util.List;
  * Created by ljy on 2018/3/16.
  */
 
-public class NewsResponse implements Serializable{
+public class JisuResponse implements Serializable{
 
     private String msg;
     private String status;

@@ -33,7 +33,7 @@ public class User extends Model {
     public String desc;
 
     @Column(name = "zodiac")
-    public Integer zodiac;
+    public Integer zodiac = -1;
 
     @Column(name = "point")
     public Integer point = 0;

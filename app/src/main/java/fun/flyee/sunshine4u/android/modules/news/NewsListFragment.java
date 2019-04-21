@@ -19,8 +19,8 @@ import butterknife.BindView;
 import fun.flyee.sunshine4u.android.R;
 import fun.flyee.sunshine4u.android.api.ApiClient;
 import fun.flyee.sunshine4u.android.fragments.BaseFragment;
+import fun.flyee.sunshine4u.android.models.JisuResponse;
 import fun.flyee.sunshine4u.android.models.News;
-import fun.flyee.sunshine4u.android.models.NewsResponse;
 import fun.flyee.sunshine4u.android.utils.Constant;
 import fun.flyee.sunshine4u.android.utils.Util;
 import fun.flyee.sunshine4u.android.widgets.Toaster;
@@ -114,14 +114,14 @@ public class NewsListFragment extends BaseFragment {
         ApiClient.jsApi().newsList(Constant.JISU_API_KEY, channel, start, PAGE_SIZE)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Observer<NewsResponse>() {
+                .subscribe(new Observer<JisuResponse>() {
                     @Override
                     public void onSubscribe(Disposable d) {
 
                     }
 
                     @Override
-                    public void onNext(NewsResponse resp) {
+                    public void onNext(JisuResponse resp) {
                         if ("0".equals(resp.getStatus())) {
                             JSONObject respJson = JSONObject.parseObject(resp.getResult());
                             if (respJson.containsKey("list")) {

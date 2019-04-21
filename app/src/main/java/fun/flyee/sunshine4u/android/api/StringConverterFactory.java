@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 
-import fun.flyee.sunshine4u.android.models.NewsResponse;
+import fun.flyee.sunshine4u.android.models.JisuResponse;
 import okhttp3.ResponseBody;
 import retrofit2.Converter;
 import retrofit2.Retrofit;
@@ -17,7 +17,7 @@ public class StringConverterFactory extends Converter.Factory {
     public Converter<ResponseBody, ?> responseBodyConverter(Type type, Annotation[] annotations, Retrofit retrofit) {
         if (type == String.class) {
             return new StringConverter();
-        } else if(type == NewsResponse.class) {
+        } else if(type == JisuResponse.class) {
             //其它类型我们不处理，返回null就行
             return new BaseMessageConverter();
         }
@@ -32,14 +32,14 @@ public class StringConverterFactory extends Converter.Factory {
         }
     }
 
-    public class BaseMessageConverter implements Converter<ResponseBody, NewsResponse> {
+    public class BaseMessageConverter implements Converter<ResponseBody, JisuResponse> {
 
         @Override
-        public NewsResponse convert(ResponseBody value) throws IOException {
+        public JisuResponse convert(ResponseBody value) throws IOException {
             String json = value.string();
 //            String json = decrypt(string);
-            NewsResponse newsResponse = JSONObject.parseObject(json, NewsResponse.class);
-            return newsResponse;
+            JisuResponse jisuResponse = JSONObject.parseObject(json, JisuResponse.class);
+            return jisuResponse;
         }
 
     }
