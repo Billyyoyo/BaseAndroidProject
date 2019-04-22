@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+	"webpack-dev-server": ">=3.1.11",
     "axios": "^0.18.0",
     "muse-ui": "^3.0.2",
     "muse-ui-loading": "^0.2.0",
