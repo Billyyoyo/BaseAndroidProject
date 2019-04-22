@@ -20,11 +20,11 @@
     "quill-image-resize-module": "^3.0.0",
     "vue": "^2.5.2",
     "vue-quill-editor": "^3.0.6",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "webpack": "^4.30.0",
+    "webpack-dev-server": "^3.3.1"
   },
   "devDependencies": {
-	"webpack": "^4.20.2",
-    "webpack-dev-server": "^3.1.9",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
@@ -66,9 +66,7 @@
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.1.2",
     "vue-template-compiler": "^2.5.2",
-    "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
